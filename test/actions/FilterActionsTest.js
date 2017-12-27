@@ -3,28 +3,28 @@ import { expect } from 'chai'
 import * as filterActions from '../../src/actions/filterActions'
 
 describe('FilterActions', function () {
-    describe('serializeFilters', function () {
+    describe('getFilterFromUrl', function () {
         it('should return an empty string when passed an empty object or a falsey object', function () {
-            expect(eventActions.serializeFilters(null)).to.equal('')
-            expect(eventActions.serializeFilters({})).to.equal('')
+            expect(filterActions.getFilterFromUrl(null)).to.equal('')
+            expect(filterActions.getFilterFromUrl({})).to.equal('')
         })
 
-        it('should return a serialized query fragment when passed an object with properties', function () {
-            const testInput = {
-                testProperty: 'testValue',
-                secondTestProperty: 'secondTestValue'````````````````````````````
-            }
-            const expectedResult = 'testProperty=testValue&secondTestProperty=secondTestValue'
+        // it('should return a serialized query fragment when passed an object with properties', function () {
+        //     const testInput = {
+        //         testProperty: 'testValue',
+        //         secondTestProperty: 'secondTestValue'````````````````````````````
+        //     }
+        //     const expectedResult = 'testProperty=testValue&secondTestProperty=secondTestValue'
 
-            expect(filterActions.serializeFilters(testInput)).to.equal(expectedResult)
-        })
+        //     expect(filterActions.serializeFilters(testInput)).to.equal(expectedResult)
+        // })
 
-        it('Should ignore incidentId', function () {
-            const testInput = {
-                incidentId: 'valueThatShouldNotBeThere'
-            }
-            expect(filterActions.serializeFilters(testInput)).to.equal('')
-        })
+        // it('Should ignore incidentId', function () {
+        //     const testInput = {
+        //         incidentId: 'valueThatShouldNotBeThere'
+        //     }
+        //     expect(filterActions.serializeFilters(testInput)).to.equal('')
+        // })
     })
 })
 
