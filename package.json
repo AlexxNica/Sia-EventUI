@@ -60,7 +60,7 @@
     "null-loader": "^0.1.1",
     "open": "0.0.5",
     "phantomjs-prebuilt": "^2.0.0",
-    "prop-types": "^15.5.8",
+    "prop-types": "^15.6.0",
     "react": "^15.0.0",
     "react-addons-test-utils": "^15.0.0",
     "react-dom": "^15.0.0",
@@ -72,6 +72,7 @@
     "redux": "^3.6.0",
     "rimraf": "^2.4.3",
     "style-loader": "^0.13.0",
+    "uglifyjs-webpack-plugin": "1.0.0-beta.2",
     "url-loader": "^0.5.6",
     "watchify": "^3.9.0",
     "webpack": "^1.12.0",
@@ -80,8 +81,7 @@
     "webpack-hot-middleware": "^2.18.0",
     "webpack-material-design-icons": "^0.1.0",
     "webpack-node-externals": "^1.6.0",
-    "webpack-shell-plugin": "^0.5.0",
-    "uglifyjs-webpack-plugin": "1.0.0-beta.2"
+    "webpack-shell-plugin": "^0.5.0"
   },
   "dependencies": {
     "@aspnet/signalr-client": "^1.0.0-alpha1-final",
