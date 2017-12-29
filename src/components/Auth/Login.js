@@ -5,9 +5,10 @@ import { login } from '../../services/authNService'
 
 export class Login extends React.Component {
     static propTypes = {
-        dispatch: PropTypes.func,
+        dispatch: PropTypes.func.isRequired,
         login: PropTypes.func,
-        isLoggedIn: PropTypes.bool,
+        isLoggedIn: PropTypes.bool.isRequired,
+        signInAutomatically: PropTypes.bool.isRequired
     }
     
     constructor() {

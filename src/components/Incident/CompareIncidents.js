@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { CollapsibleGridSet } from '../elements/CollapsibleGrid'
 import { IncidentSummary, IncidentEvents, IncidentSummaryName, IncidentEventsName} from './DisplayIncident'
 
@@ -15,6 +16,17 @@ export const CompareIncidents = (firstIncident, firstTicket, firstTicketSystem, 
     ],
     expandSection,
     dispatch)
+}
+
+CompareIncidents.propTypes = {
+    firstIncident: PropTypes.object,
+    firstTicket: PropTypes.object,
+    firstTicketSystem: PropTypes.object.isRequired,
+    secondIncident: PropTypes.object,
+    secondTicket: PropTypes.object,
+    secondTicketSystem: PropTypes.object.isRequired,
+    expandSection: PropTypes.object,
+    dispatch: PropTypes.func.isRequired
 }
 
 export default CompareIncidents

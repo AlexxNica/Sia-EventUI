@@ -61,7 +61,11 @@ Event.propTypes = {
     text: PropTypes.string.isRequired,
     time: PropTypes.instanceOf(moment),
     backgroundColor: PropTypes.string,
-    ticketId: PropTypes.string
+    ticketId: PropTypes.string,
+    eventId: PropTypes.number,
+    eventTypeId: PropTypes.number,
+    eventTypeIsFetching: PropTypes.bool,
+    event: PropTypes.object
 }
 
 export const mapStateToEventProps = (state, ownProps) => {
